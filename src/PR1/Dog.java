@@ -8,6 +8,7 @@ public class Dog {
     private String color;
     private String name;
 
+
     public Dog(char sex, String color, String name) {
         this.sex = sex;
         this.color = color;
@@ -16,7 +17,7 @@ public class Dog {
 
     {
         age = 0;
-        weight = 2;
+        weight = 1;
     }
 
     public void setAge(int age) {

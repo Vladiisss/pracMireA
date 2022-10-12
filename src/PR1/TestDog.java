@@ -8,6 +8,6 @@ public class TestDog {
         System.out.println(obj.toString());
         obj.setAge(7);
         obj.setWeight(20);
-        System.out.println(obj.toString());
+        System.out.println(obj);
     }
 }
