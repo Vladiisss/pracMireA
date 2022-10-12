@@ -8,31 +8,23 @@ public class Y11 {
         int n = in.nextInt();
 
         if (n == 1) {
-            int m = in.nextInt();
-            // Базовый случай
-            if (m == 1) {
-                // Шаг рекурсии / рекурсивное условие
-                return recursion11() + n + m;
-            } else {
-                int k = in.nextInt();
-                // Базовый случай
-                if (k == 1) {
-                    // Шаг рекурсии / рекурсивное условие
-                    return recursion11() + n + m + k;
-                } else {
-                    return n + m + k;
-                }
-            }
-        } else {
-            int m = in.nextInt();
-            // Базовый случай
-            if (m == 1) {
-                // Шаг рекурсии / рекурсивное условие
-                return recursion11() + n + m;
-            } else {
-                return n + m;
-            }
+            return recursion11() + 1;
         }
+
+        if (n != 0) {
+            return recursion11();
+        }
+
+        int a = in.nextInt();
+        if (a == 0) {
+            return 0;
+        }
+
+        if (a == 1) {
+            return recursion11() + 1;
+        }
+
+        return recursion11();
     }
 
     public static int recursion12() {
