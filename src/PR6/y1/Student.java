@@ -1,6 +1,4 @@
-package PR6;
-
-import java.util.Comparator;
+package PR6.y1;
 
 public class Student implements Comparable<Student> {
 
@@ -16,16 +14,8 @@ public class Student implements Comparable<Student> {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
     public int getId() {
         return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
     }
 
     @Override
