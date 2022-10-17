@@ -2,6 +2,7 @@ package PR6.y1;
 
 import java.util.Arrays;
 import java.util.Scanner;
+import java.util.Stack;
 
 public class TestClass {
 
