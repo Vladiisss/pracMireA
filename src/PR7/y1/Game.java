@@ -6,18 +6,6 @@ import java.util.Stack;
 
 
 public class Game {
-/*
-
-    public static void main(String[] args) {
-
-        Deck obj = new Deck();
-        obj.insertDown(10, 12);
-        obj.get();
-        System.out.println(obj.isEmpty());
-
-    }
-*/
-
 
     public static void main(String[] args) {
 
