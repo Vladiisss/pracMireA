@@ -22,6 +22,8 @@ public class Student implements Comparable<Student> {
     public int compareTo(Student o) {
         return this.id - o.id;
     }
+
+    @Override
     public String toString(){
         return  id + " " + name;
     }
