@@ -36,6 +36,8 @@ public class MakingOrder {
 
         try {
             checkINN(inn);
+            Client client = new Client(name, inn);
+            System.out.println("Все хорошо");
         } catch (BadINNException e) {
             System.out.println(e);
         }
