@@ -1,29 +1,33 @@
 package PR8;
 
-import java.net.SocketOptions;
 import java.util.Collection;
 import java.util.Deque;
 import java.util.concurrent.ConcurrentLinkedDeque;
 
+
 public class WaitList<E> implements IWaitList<E> {
 
-    protected Deque<E> deque = new ConcurrentLinkedDeque<>();
+    protected Deque<E> deque;
 
+    WaitList<Double> df;
 
-    public WaitList() {}
+    public WaitList() {
+        deque = new ConcurrentLinkedDeque<>();
+    }
 
     public WaitList(Collection<E> c) {
+        deque = new ConcurrentLinkedDeque<>();
         deque.addAll(c);
     }
 
     @Override
     public void add(E element) {
-        deque.add(element);
+        deque.addLast(element);
     }
 
     @Override
     public E remove() {
-        return deque.remove();
+        return deque.removeFirst();
     }
 
     @Override
