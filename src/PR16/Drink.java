@@ -2,7 +2,7 @@ package PR16;
 
 public final class Drink implements Item {
 
-    private int price = -1;
+    private double price = -1;
     private String name, description;
 
     public Drink(String name, String description) {
@@ -10,14 +10,14 @@ public final class Drink implements Item {
         this.description = description;
     }
 
-    public Drink(int price, String name, String description) {
+    public Drink(double price, String name, String description) {
         this.price = price;
         this.name = name;
         this.description = description;
     }
 
     @Override
-    public int getPrice() {
+    public double getPrice() {
         return price;
     }
 
@@ -31,4 +31,12 @@ public final class Drink implements Item {
         return description;
     }
 
+    @Override
+    public String toString() {
+        return "Drink{" +
+                "price=" + price +
+                ", name='" + name + '\'' +
+                ", description='" + description + '\'' +
+                '}';
+    }
 }
