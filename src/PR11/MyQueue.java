@@ -1,33 +1,34 @@
 package PR11;
 
-public class MyQueue<E> implements Queue<E> {
-    @Override
-    public boolean add(E e) {
-        return false;
-    }
+public interface MyQueue<E> {
 
-    @Override
-    public E element() {
-        return null;
-    }
+    /**
+     * Возвращает, но не удаляет, элемент из начала очереди.
+     * <p>Если очередь пуста, генерирует исключение NoSuchElementException
+     */
+    E element();
 
-    @Override
-    public boolean offer(E e) {
-        return false;
-    }
+    /**
+     * Добавляет элемент obj в конец очереди.
+     * <p>Если элемент удачно добавлен, возвращает true, иначе - false
+     */
+    boolean offer(E e);
 
-    @Override
-    public E peek() {
-        return null;
-    }
+    /**
+     * Возвращает без удаления элемент из начала очереди.
+     * <p>Если очередь пуста, возвращает значение null
+     */
+    E peek();
 
-    @Override
-    public E poll() {
-        return null;
-    }
+    /**
+     * Возвращает с удалением элемент из начала очереди.
+     * <p>Если очередь пуста, возвращает значение null
+     */
+    E poll();
 
-    @Override
-    public E remove() {
-        return null;
-    }
+    /**
+     * Возвращает с удалением элемент из начала очереди.
+     * <p>Если очередь пуста, генерирует исключение NoSuchElementException
+     */
+    E remove();
 }
