@@ -1,4 +1,4 @@
-package PR16;
+package PR16.items;
 
 public interface Item {
 

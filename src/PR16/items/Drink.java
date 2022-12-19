@@ -1,11 +1,13 @@
-package PR16;
+package PR16.items;
 
 public final class Drink implements Item {
 
-    private double price = -1;
-    private String name, description;
+    private final double price;
+    private final String name;
+    private final String description;
 
     public Drink(String name, String description) {
+        this.price = 0;
         this.name = name;
         this.description = description;
     }
@@ -33,10 +35,6 @@ public final class Drink implements Item {
 
     @Override
     public String toString() {
-        return "Drink{" +
-                "price=" + price +
-                ", name='" + name + '\'' +
-                ", description='" + description + '\'' +
-                '}';
+        return name + " - " + price + " rub. Описание: " + description;
     }
 }
